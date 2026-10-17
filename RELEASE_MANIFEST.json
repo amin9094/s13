@@ -1,0 +1,73 @@
+{
+  "version": "9.0.0-candidate.36",
+  "release_channel": "candidate",
+  "created_at": "2026-10-17T20:18:29.145434+00:00",
+  "commit_sha": "unavailable",
+  "docker_image_digest": null,
+  "quality_proof_source_sha256": "01e8bb88e24a3c6e135d0a2c6f574a27f4706ae235f4829e9f5a291ffcdeef5d",
+  "runtime_sha256": "5f3705225224d364edab06b6b43fa3fde51d91a72f4ec3ae138c04eb9287365f",
+  "automated_tests_discovered": 0,
+  "automated_tests_executed": 0,
+  "telegram_handlers": 0,
+  "line_coverage_percent": 0,
+  "critical_path_coverage_percent": 0,
+  "validation": {
+    "full_suite_after_apt_fix": false
+  },
+  "deferred_validation": {
+    "full_quality_gate_after_dockerfile_fix": {
+      "status": "required",
+      "reason": "This ZIP is a checkpoint-derived repair artifact. Full tests and Docker build must run on Railway; no new full-suite attestation is claimed."
+    },
+    "docker_image_digest": {
+      "status": "not_recorded",
+      "reason": "must be recorded after image build"
+    },
+    "external_production_acceptance": {
+      "status": "not_attested",
+      "reason": "production external verification remains pending"
+    }
+  },
+  "dependency_lock": {
+    "schema_version": 2,
+    "python_target": "3.12",
+    "python_runtime": "3.12.14",
+    "complete_transitive_lock": true,
+    "hashes_required": true,
+    "generated_by": "pip-tools==7.6.1 with reviewed hash-pinned SOCKS addition",
+    "attested_at": "2026-10-17T03:46:39.551438+00:00",
+    "production_lock_sha256": "dffa851784f9612894dcfd4ac704c588672da1a3ff32158dbdc199a7af3f9556",
+    "development_lock_sha256": "4c48eb7f394ba92f3e3d636b747b5383f9a1815fdfdef717c1d2da2eb3d0536d",
+    "reviewed_additions": [
+      "socksio==1.0.0; wheel SHA-256 verified"
+    ]
+  },
+  "security_controls": {
+    "docker_quality_dependency": true,
+    "secure_non_root_entrypoint": true,
+    "strict_production_secret_validation": true,
+    "session_key_rotation": true,
+    "backup_key_rotation": true,
+    "private_encrypted_receipt_storage": true,
+    "receipt_upload_quota_and_retention": true,
+    "postgres_advisory_migration_lock": true,
+    "postgres_connection_pool": true,
+    "redis_connection_limits": true,
+    "bounded_blocking_io": true,
+    "sse_connection_limits": true,
+    "maintenance_mutation_gate": true,
+    "csrf_and_origin_validation": true
+  },
+  "production_acceptance": {
+    "required_line_coverage_percent": 40,
+    "required_critical_path_coverage_percent": 85,
+    "requires_no_deferred_validation": true,
+    "requires_real_postgres_redis_telegram_staging": true,
+    "requires_live_gemini_generation_test": true,
+    "requires_playwright_telegram_webview_smoke": true,
+    "requires_mt5_ex5_and_demo_attestation": true,
+    "requires_complete_transitive_hash_lock": true
+  },
+  "repair_build_status": "UNVERIFIED_UNTIL_RAILWAY_QUALITY_STAGE",
+  "build_fix_note": "Railway quality-test compatibility patch; quality gate must rerun on Railway before production acceptance"
+}

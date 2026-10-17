@@ -1,0 +1,20 @@
+{
+  "version": "9.0.0-candidate.35",
+  "source_sha256": "80f51b9b9f53aa255b6ef18f97c1d3c93c6cae6dc9c676dec55f110898aec4c7",
+  "completed_at": "2026-10-17T14:31:27.089005+00:00",
+  "tests": 2683,
+  "new_test_cases": 72,
+  "javascript_scenarios": 5,
+  "failed": 0,
+  "skipped": 0,
+  "line_coverage": 47,
+  "critical_coverage": 79,
+  "source_unchanged": true,
+  "production_verified": false,
+  "schema_revision": 18,
+  "based_on": "candidate.34",
+  "status": "LOCAL_CANDIDATE_IMPLEMENTED",
+  "strategy_selection": "MANUAL",
+  "historical_plans": "FROZEN",
+  "history_preserved": true
+}
